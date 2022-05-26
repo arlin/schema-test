@@ -1,0 +1,24 @@
+{
+    "GECRecord": {
+        "id": "example glossary",
+		"contents": {
+            "title": "S",
+			"design": {
+                "biosample": {
+                    "biosample-id": "this",
+                    },
+					"editor": {
+                    "editor-type": "ZFN",
+                    },
+                    "delivery-system": {
+                    "sss": "this",
+                    },
+                    "measurement": {
+                    "xx": "this",
+                    },
+                }
+            }
+        }
+    }
+}
+
