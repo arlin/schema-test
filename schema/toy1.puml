@@ -1,0 +1,10 @@
+@startjson
+{
+"vehicles" :["Ford truck", "BMW car", "Fiat car"],
+"vehicles2" : [
+{ "brand" : "Ford", "type" : "truck" },
+{ "brand" : "BMW", "type" : "car" },
+{ "brand" : "FIat", "type" : "car" }
+]
+}
+@endjson
