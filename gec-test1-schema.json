@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome1",
+    "definitions": {
+        "Welcome1": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "experiment": {
+                    "$ref": "#/definitions/Experiment"
+                }
+            },
+            "required": [
+                "experiment"
+            ],
+            "title": "Welcome1"
+        },
+        "Experiment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "experiment_record": {
+                    "$ref": "#/definitions/ExperimentRecord"
+                }
+            },
+            "required": [
+                "description",
+                "experiment_record",
+                "id"
+            ],
+            "title": "Experiment"
+        },
+        "ExperimentRecord": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "delivery_system": {
+                    "type": "string"
+                },
+                "editor": {
+                    "$ref": "#/definitions/Editor"
+                }
+            },
+            "required": [
+                "delivery_system",
+                "editor",
+                "id"
+            ],
+            "title": "ExperimentRecord"
+        },
+        "Editor": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "genome_info": {
+                    "$ref": "#/definitions/GenomeInfo"
+                }
+            },
+            "required": [
+                "description",
+                "genome_info"
+            ],
+            "title": "Editor"
+        },
+        "GenomeInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "guide": {
+                    "$ref": "#/definitions/Guide"
+                }
+            },
+            "required": [
+                "description",
+                "guide"
+            ],
+            "title": "GenomeInfo"
+        },
+        "Guide": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "species": {
+                    "type": "string"
+                },
+                "pam": {
+                    "type": "string"
+                },
+                "guide": {
+                    "type": "string"
+                },
+                "guide_description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "guide",
+                "guide_description",
+                "pam",
+                "species"
+            ],
+            "title": "Guide"
+        }
+    }
+}
